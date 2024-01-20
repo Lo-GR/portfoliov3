@@ -1,19 +1,43 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import logo from './images/TNTLogo.png';
+import Home from './Pages/Home/';
+import { Error } from './Pages/Error';
+import { useState } from 'react';
+import MobileNav from './Components/MobileNav';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Layout = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleMobileNav = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <>
+      <Outlet />
+      <MobileNav open={open} handleOpen={handleMobileNav} />
+    </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+        errorElement: <Error />,
+      },
+    ],
+  },
+]);
+
+root.render(<RouterProvider router={router} />);
