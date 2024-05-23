@@ -1,9 +1,10 @@
-import React from 'react'
+import { TypeAnimation } from 'react-type-animation';
+import Background from '../../Components/Background/Index';
 
-type Props = {}
+type HomeProps = {}
 
-export default function Home({ }: Props) {
+export default function Home({ }: HomeProps) {
   return (
-    <div>Index</div>
+    <Background />
   )
 }
