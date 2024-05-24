@@ -1,10 +1,10 @@
-import { TypeAnimation } from 'react-type-animation';
-import Background from '../../Components/Background/Index';
+
+import Header from '../../Components/Header/Index';
 
 type HomeProps = {}
 
 export default function Home({ }: HomeProps) {
   return (
-    <Background />
+    <Header />
   )
 }

@@ -1,10 +1,10 @@
 import { TypeAnimation } from 'react-type-animation';
 
-type BackgroundProps = {}
+type HeaderProps = {}
 
-const Background = ({ }: BackgroundProps) => {
+const Header = ({ }: HeaderProps) => {
   return (
-    <div className='top-0 left-0 w-360 h-800 fixed -z-10'>
+    <div className='w-full top-0 left-0 w-360 h-800 fixed'>
       <TypeAnimation
         sequence={[
           // Same substring at the start will only be typed out once, initially
@@ -32,4 +32,4 @@ const Background = ({ }: BackgroundProps) => {
   )
 }
 
-export default Background
+export default Header

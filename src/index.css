@@ -5,14 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Inter&family=Roboto&display=swap');
 
 :root {
-  --sp-primary-200: #060903;
-  --sp-primary-300: #231F20;
-  --sp-primary-400: #54482C;
-  --sp-secondary-300: #F7FDFD;
-  --sp-secondary-400: #FBFCF7;
-  --sp-secondary-500: #EFEEE6;
-  --sp-tertiary-500: #E09331;
-  --sp-tertiary-600: #F2DC4F;
+  --sp-background-100: #FFF;
+  --sp-background-300: #E1E1E1;
+  --sp-text-300: #33332D;
+  --sp-contrast-400: #82F7EB;
 }
 
 html,
@@ -168,7 +164,7 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: var(--sp-background-100);
 }
 
 code {
@@ -178,13 +174,19 @@ code {
 
 p,
 span {
-  color: white;
+  color: var(--sp-text-300);
   font-family: 'Inter';
 }
 
-h2 {
-  color: white;
+h1,
+h2,
+h3,
+h4 {
+  color: var(--sp-text-300);
   font-family: 'Courier New';
+}
+
+h1 {
   font-size: 40px;
   font-weight: 600
 }
