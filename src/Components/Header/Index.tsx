@@ -6,7 +6,7 @@ type HeaderProps = {}
 const Header = ({ }: HeaderProps) => {
   return (
     <MainContainer>
-      <div className='w-full fixed bg-sp-background-300'>
+      <div className='w-10/12 mx-auto bg-sp-background-300 flex justify-center items-center py-2 rounded-lg lg:w-full'>
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
@@ -37,7 +37,7 @@ const Header = ({ }: HeaderProps) => {
           ]}
           wrapper="h1"
           speed={50}
-          style={{ fontSize: '3rem', lineHeight: '3.4rem', display: 'inline-block' }}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
         />
       </div>
