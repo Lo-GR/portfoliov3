@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Inter&family=Roboto&display=swap');
 
+
+/* Font Reference */
+/* .kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */
+
 :root {
   --sp-background-100: #FFF;
   --sp-background-300: #E1E1E1;
@@ -183,7 +191,9 @@ h2,
 h3,
 h4 {
   color: var(--sp-text-300);
-  font-family: 'Courier New';
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
