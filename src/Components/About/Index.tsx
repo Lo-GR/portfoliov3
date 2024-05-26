@@ -13,12 +13,12 @@ const About = ({ }: AboutProps) => {
         <p>
           {about.bio}
         </p>
-        <a href={about.linkedin} target="_blank" rel="noreferrer" className="w-full h-full flex justify-around items-center flex-col">
-          <LinkedInIcon sx={{ fontSize: '12rem', color: '#33332D' }} />
+        <a href={about.linkedin} target="_blank" rel="noreferrer" className="flex justify-around items-center">
+          <LinkedInIcon sx={{ fontSize: '6rem', color: '#33332D' }} />
         </a>
       </div>
       <div className='lg:w-5/12'>
-        <img className='rounded-full' src={about.image} alt='Image of Logan' />
+        <img className='rounded-full' src={about.image} alt='Logan Roth' />
       </div>
 
     </div>
