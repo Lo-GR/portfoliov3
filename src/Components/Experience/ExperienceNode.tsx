@@ -33,9 +33,9 @@ const ExperienceNode = ({ dataSet }: ExperienceNodeProps) => {
       </div>
 
       <ul>
-        {experience.map(e => {
+        {experience.map((e, i) => {
           return (
-            <div className='flex flex-col gap-2 mb-4'>
+            <div key={e} className='flex flex-col gap-2 mb-4'>
               <li>{e}</li>
               <div className='w-full h-[2px] bg-sp-text-300 rounded' />
             </div>

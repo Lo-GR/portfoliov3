@@ -13,17 +13,18 @@ type ExperienceProps = {
 }
 
 const Experience = ({ data }: ExperienceProps) => {
+  const numOfNodes = data.length - 1;
   return (
     <div>
       <h2 className='mb-6'>
         Experience
       </h2>
       <div className='flex flex-col gap-6'>
-        {data.map(experience => {
+        {data.map((experience, index) => {
           return (
             <>
               <ExperienceNode dataSet={experience} />
-              <NodeLine />
+              {index < numOfNodes ? <NodeLine /> : <></>}
             </>
           )
         })}
