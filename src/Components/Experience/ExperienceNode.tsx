@@ -15,7 +15,7 @@ type ExperienceNodeProps = {
 const ExperienceNode = ({ dataSet }: ExperienceNodeProps) => {
   const { company, title, dateStart, dateEnd, location, experience } = dataSet;
   return (
-    <div className='flex flex-col p-5 gap-12'>
+    <div className='flex flex-col gap-12'>
       <div>
         <h3>{company}</h3>
         <h4>{title}</h4>
@@ -34,7 +34,12 @@ const ExperienceNode = ({ dataSet }: ExperienceNodeProps) => {
 
       <ul>
         {experience.map(e => {
-          return <li>{e}</li>
+          return (
+            <div className='flex flex-col gap-2 mb-4'>
+              <li>{e}</li>
+              <div className='w-full h-[2px] bg-sp-text-300 rounded' />
+            </div>
+          )
         })}
       </ul>
     </div>

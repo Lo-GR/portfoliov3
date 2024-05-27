@@ -18,17 +18,17 @@ const Experience = ({ data }: ExperienceProps) => {
       <h2 className='mb-6'>
         Experience
       </h2>
-      {data.map(experience => {
-        return (
-          <>
-            <ExperienceNode dataSet={experience} />
-            <NodeLine />
-          </>
-        )
-      })}
+      <div className='flex flex-col gap-6'>
+        {data.map(experience => {
+          return (
+            <>
+              <ExperienceNode dataSet={experience} />
+              <NodeLine />
+            </>
+          )
+        })}
+      </div>
     </div>
-
-
   )
 }
 

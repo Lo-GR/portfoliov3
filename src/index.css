@@ -194,7 +194,8 @@ code {
 }
 
 p,
-span {
+span,
+li {
   color: var(--sp-text-300);
   font-family: 'Inter';
   line-height: 1.4rem;
@@ -249,7 +250,8 @@ h4 {
     font-weight: 400;
   }
 
-  p {
+  p,
+  li {
     line-height: 1.4rem;
   }
 
