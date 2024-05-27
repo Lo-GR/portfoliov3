@@ -30,3 +30,34 @@ export const about = {
   title: "Flexible developer with a passion for learning",
   linkedin: "https://www.linkedin.com/in/lo-gr/"
 }
+
+export const skillsData = [
+  {
+    name: "React",
+    value: 4
+  },
+  {
+    name: "JavaScript",
+    value: 4
+  },
+  {
+    name: "HTML",
+    value: 4
+  },
+  {
+    name: "CSS",
+    value: 4
+  },
+  {
+    name: "TypeScript",
+    value: 3
+  },
+  {
+    name: "Node",
+    value: 2
+  },
+  {
+    name: "Python",
+    value: 1
+  },
+]

@@ -1,4 +1,5 @@
 import React from 'react'
+import MainContainer from '../MainContainer/Index'
 
 type BarProps = {
   dataPoint: {
@@ -16,7 +17,7 @@ const Bar = ({ dataPoint }: BarProps) => {
       text = 'Learning'
       break
     case 2:
-      val = 'w-1/5 bg-sp-contrast-yellow-400'
+      val = 'w-1/2 bg-sp-contrast-yellow-400'
       text = 'Familiar'
       break
     case 3:
@@ -32,10 +33,19 @@ const Bar = ({ dataPoint }: BarProps) => {
   }
 
   return (
-    <div>
-      <div>
-
+    <div className='w-full h-8 flex items-center'>
+      {/* Axis description */}
+      <div className='w-32'>
+        <p className=''>
+          {dataPoint.name}
+        </p>
       </div>
+
+      {/* Bar itself */}
+      <div className='h-full w-full flex items-center border-l-sp-text-300 border-l-2 border-solid'>
+        <div className={`${val} h-5/6 rounded-r`} />
+        <p className='absolute ml-6'>{text}</p>
+      </div >
 
     </div>
   )

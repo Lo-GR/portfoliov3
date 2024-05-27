@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Bar from './Bar'
 
 type BarGraphProps = {
@@ -10,7 +10,8 @@ type BarGraphProps = {
 
 const BarGraph = ({ data }: BarGraphProps) => {
   return (
-    <div className='w-full flex flex-col gap-6'>
+    <div className='w-full flex flex-col'>
+      <h2 className='mb-6'>Skills</h2>
       {data.map(d => {
         return <Bar dataPoint={d} />
       })}
