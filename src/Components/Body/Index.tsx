@@ -16,10 +16,8 @@ const Body = ({ }: BodyProps) => {
           <BarGraph tableName={skillsData.tableName} data={skillsData.dataSet} />
           <BarGraph tableName={conceptsData.tableName} data={conceptsData.dataSet} />
         </div>
-        {/* <BarGraph data={skillsData} /> */}
       </div>
     </MainContainer>
-
   )
 }
 

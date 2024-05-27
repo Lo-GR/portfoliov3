@@ -106,6 +106,10 @@ export const skillsData = {
       name: "Figma",
       value: 1
     },
+    {
+      name: "Wordpress",
+      value: 1
+    },
   ]
 }
 
@@ -126,6 +130,10 @@ export const conceptsData = {
     },
     {
       name: "CI/CD",
+      value: 3
+    },
+    {
+      name: "CRM",
       value: 3
     },
     {
@@ -170,3 +178,43 @@ export const conceptsData = {
     },
   ]
 }
+
+export const experience = [
+  {
+    company: 'Hemisphere Design',
+    title: "Web Developer",
+    dateStart: 'Sep 2023',
+    dateEnd: 'Present',
+    location: 'Tacoma, WA',
+    experience: [
+      'Programmed a custom CMS for clients to manage their web content.',
+      'Corresponded with clients to research and fulfill requirements.',
+      'Built progressive web apps following strict accessibility and SEO requirements.'
+    ]
+  },
+  {
+    company: 'Trek10',
+    title: "Cloud Engineer",
+    dateStart: 'Nov 2021',
+    dateEnd: 'Aug 2023',
+    location: 'Remote',
+    experience: [
+      'Transformed complex ideas into tangible solutions by architecting and constructing React-based, full-stack, modular applications, hosted on AWS.',
+      'Adapted and optimized back-end APIs to seamlessly align with front-end requirements. This created a cohesive and exceptional user experience across applications.',
+      'Engaged with stakeholders, including influential Airforce leaders, bi-weekly to present iteration goals and showcase outcomes. This strategic communication fostered transparency and alignment across the board.',
+      'Revamped a major Nuxt-based learning platform by integrating front-end packages that complied with stringent Department of Defense regulations.',
+      'Championed user experience research, translating insights into actionable design improvements.',
+      'Leveraged the power of AWS services, including CDK, Lambda, S3, and EC2, to enable a server-less cloud infrastructure.'
+    ]
+  },
+  {
+    company: 'Mentorschip',
+    title: "Software Engineer",
+    dateStart: 'May 2021',
+    dateEnd: 'Aug 2021',
+    location: 'Remote',
+    experience: [
+      'Developed features on a React Native app which allowed users to log in to view scholarship data and viewpoints on Google Maps.',
+    ]
+  }
+]
