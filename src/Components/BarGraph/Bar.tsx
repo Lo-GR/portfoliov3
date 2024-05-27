@@ -1,5 +1,5 @@
 import React from 'react'
-import MainContainer from '../MainContainer/Index'
+import { motion } from 'framer-motion';
 
 type BarProps = {
   dataPoint: {
@@ -11,25 +11,42 @@ type BarProps = {
 const Bar = ({ dataPoint }: BarProps) => {
   let val = "";
   let text = "";
+  let wide = "";
   switch (dataPoint.value) {
     case 1:
-      val = "w-1/4 bg-sp-contrast-orange-400"
+      val = "bg-sp-contrast-orange-400"
       text = 'Learning'
+      wide = "25%"
       break
     case 2:
-      val = 'w-1/2 bg-sp-contrast-yellow-400'
+      val = 'bg-sp-contrast-yellow-400'
       text = 'Familiar'
+      wide = "50%"
       break
     case 3:
-      val = 'w-3/4 bg-sp-contrast-blue-500'
+      val = 'bg-sp-contrast-blue-500'
       text = 'Experienced'
+      wide = "75%"
       break
     case 4:
-      val = 'w-full bg-sp-contrast-green-400'
+      val = 'bg-sp-contrast-green-400'
       text = 'Proficient'
+      wide = "100%"
       break
     default:
       text = 'error'
+  }
+
+  const barVariants = {
+    visible: (width: string) => ({
+      width: width,
+      transition: {
+        duration: 1,
+      },
+    }),
+    initial: {
+      width: "0%"
+    },
   }
 
   return (
@@ -43,7 +60,15 @@ const Bar = ({ dataPoint }: BarProps) => {
 
       {/* Bar itself */}
       <div className='h-full w-full flex items-center border-l-sp-text-300 border-l-2 border-solid'>
-        <div className={`${val} h-5/6 rounded-r`} />
+        <motion.div
+          custom={wide}
+          variants={barVariants}
+          initial='initial'
+          whileInView='visible'
+          viewport={{ once: true }}
+          className={`${val} h-5/6 rounded-r`}
+        />
+        {/* <div className={`${val} h-5/6 rounded-r`} /> */}
         <p className='absolute ml-6'>{text}</p>
       </div >
 
