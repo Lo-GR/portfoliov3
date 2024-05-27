@@ -12,6 +12,7 @@ const Bar = ({ dataPoint }: BarProps) => {
   let val = "";
   let text = "";
   let wide = "";
+
   switch (dataPoint.value) {
     case 1:
       val = "bg-sp-contrast-orange-400"
@@ -68,7 +69,6 @@ const Bar = ({ dataPoint }: BarProps) => {
           viewport={{ once: true }}
           className={`${val} h-5/6 rounded-r`}
         />
-        {/* <div className={`${val} h-5/6 rounded-r`} /> */}
         <p className='absolute ml-6'>{text}</p>
       </div >
 
