@@ -218,3 +218,21 @@ export const experience = [
     ]
   }
 ]
+
+export const testimonials = [
+  {
+    name: 'Patrick W.',
+    title: 'Project Manager',
+    kindWords: "Logan showed flexibility, patience, and a hunger for knowledge that is rare to find in the IT Sector. He would step into new subject areas that he had little previous experience with and thrived. I always knew that if there was a problem to solve, Logan would step forward."
+  },
+  {
+    name: 'Aaron C.',
+    title: 'Associate CTO',
+    kindWords: "Logan is an asset to the teams he joins. He brings great perspectives, he's a sponge for feedback, and he's self-motivated. His skillset grows by the day!"
+  },
+  {
+    name: 'Michael Y.',
+    title: 'Project Manager',
+    kindWords: "Logan is a hard working front-end developer with a keen eye for design and customer-centric approach. He’s eager to learn and grow his skill set to meet and exceed any tasks thrown his way. Logan is a great team player and I have no doubt will thrive in his next opportunity."
+  },
+]

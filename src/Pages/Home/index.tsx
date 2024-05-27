@@ -2,6 +2,7 @@
 import Body from '../../Components/Body/Index';
 import ExperienceBody from '../../Components/ExperienceBody/Index';
 import Header from '../../Components/Header/Index';
+import TestimonialBody from '../../Components/TestimonialBody/Index';
 
 type HomeProps = {}
 
@@ -11,6 +12,7 @@ export default function Home({ }: HomeProps) {
       <Header />
       <Body />
       <ExperienceBody />
+      <TestimonialBody />
     </div>
   )
 }
