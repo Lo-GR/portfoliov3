@@ -2,16 +2,17 @@
 import Bar from './Bar'
 
 type BarGraphProps = {
+  tableName: string
   data: {
     name: string
     value: number
   }[]
 }
 
-const BarGraph = ({ data }: BarGraphProps) => {
+const BarGraph = ({ tableName, data }: BarGraphProps) => {
   return (
     <div className='w-full flex flex-col'>
-      <h2 className='mb-6'>Skills</h2>
+      <h2 className='mb-6'>{tableName}</h2>
       {data.map(d => {
         return <Bar dataPoint={d} />
       })}
