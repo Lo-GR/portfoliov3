@@ -26,7 +26,7 @@ export const headerTitles = [
 
 export const about = {
   image: Face,
-  bio: "Hello Soon-To-Be-Former Stranger! I'm Logan from the Tacoma, WA area. I've been developing for 3 years and proficient Cloud and Front End experience. I'm motivated to jump in and dig deep in any technology and my full stack experience allows me to learn quickly while providing solutions. I have a decade of soft skills from communication to team building.  When I'm not developing, I'm working on my fitness, cooking and pursuing some kind of creative endeavor. Get to know me better by connecting with me on LinkedIn!",
+  bio: "Hello soon-to-be former Stranger! I'm Logan and after having lived on all sides of the Puget Sound, I currently reside in the Tacoma, WA area with my wife and two cats. I have three years of Cloud and Front End experience and am ready to dive deeper into my tech career. My full-stack experience allows me to adapt quickly and provide solutions in a dynamic range of team settings and projects. I have over a decade of soft skills from communication to team building. Outside of development, I like to work on my fitness, cooking, and pursuing my next creative endeavor. Get to know me better by connecting with me on LinkedIn!",
   title: "Flexible developer with a passion for learning",
   linkedin: "https://www.linkedin.com/in/lo-gr/"
 }
@@ -133,7 +133,7 @@ export const conceptsData = {
       value: 3
     },
     {
-      name: "CRM",
+      name: "CSM",
       value: 3
     },
     {
