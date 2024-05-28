@@ -133,7 +133,7 @@ export const conceptsData = {
       value: 3
     },
     {
-      name: "CSM",
+      name: "CMS",
       value: 3
     },
     {
