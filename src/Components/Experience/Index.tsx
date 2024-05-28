@@ -22,10 +22,10 @@ const Experience = ({ data }: ExperienceProps) => {
       <div className='flex flex-col gap-6'>
         {data.map((experience, index) => {
           return (
-            <>
+            <div key={index}>
               <ExperienceNode dataSet={experience} />
               {index < numOfNodes ? <NodeLine /> : <></>}
-            </>
+            </div>
           )
         })}
       </div>

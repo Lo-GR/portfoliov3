@@ -22,12 +22,12 @@ const ExperienceNode = ({ dataSet }: ExperienceNodeProps) => {
       </div>
 
       <div>
-        <div className='flex'>
-          <CalendarMonthIcon sx={{}} />
+        <div className='flex gap-3'>
+          <CalendarMonthIcon sx={{ color: "#33332D" }} />
           <p>{dateStart} - {dateEnd}</p>
         </div>
-        <div className='flex'>
-          <LocationOnIcon sx={{}} />
+        <div className='flex gap-3'>
+          <LocationOnIcon sx={{ color: "#33332D" }} />
           <p>{location}</p>
         </div>
       </div>

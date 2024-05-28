@@ -14,7 +14,7 @@ const BarGraph = ({ tableName, data }: BarGraphProps) => {
     <div className='w-full flex flex-col'>
       <h2 className='mb-6'>{tableName}</h2>
       {data.map(d => {
-        return <Bar dataPoint={d} />
+        return <Bar dataPoint={d} key={d.name} />
       })}
     </div>
   )
