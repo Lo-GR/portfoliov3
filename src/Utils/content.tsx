@@ -236,3 +236,13 @@ export const testimonials = [
     kindWords: "Logan is a hard working front-end developer with a keen eye for design and customer-centric approach. He’s eager to learn and grow his skill set to meet and exceed any tasks thrown his way. Logan is a great team player and I have no doubt will thrive in his next opportunity."
   },
 ]
+
+
+export const footerContent = {
+  links: {
+    github: 'https://github.com/Lo-GR',
+    linkedin: 'https://www.linkedin.com/in/lo-gr/',
+    email: 'logan.roth.g@gmail.com'
+  },
+  copyright: 'lo-gr.com ©2024 Logan Roth'
+}

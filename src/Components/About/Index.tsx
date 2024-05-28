@@ -5,7 +5,7 @@ type AboutProps = {}
 
 const About = ({ }: AboutProps) => {
   return (
-    <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center'>
+    <div className='flex flex-col gap-12 lg:gap-0 lg:flex-row lg:justify-between lg:items-center'>
       <div className='flex flex-col gap-12 lg:w-1/2'>
         <h2>
           {about.title}
