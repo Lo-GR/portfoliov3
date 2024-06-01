@@ -22,13 +22,13 @@ const Footer = ({ footerContent }: FooterProps) => {
       <MainContainer>
         <div className='py-12'>
           <div className='flex flex-row w-full justify-evenly pb-12'>
-            <a href={links.linkedin} className="rounded-full p-1 flex content-center" target='_blank'>
+            <a href={links.linkedin} className="rounded-full p-1 flex content-center" target='_blank' rel="noreferrer">
               <LinkedInIcon fontSize='large' sx={{ color: "#33332D" }} />
             </a>
-            <a href={links.github} className=" rounded-full p-1 flex content-center" target='_blank'>
+            <a href={links.github} className=" rounded-full p-1 flex content-center" target='_blank' rel="noreferrer">
               <GitHub fontSize='large' sx={{ color: "#33332D" }} />
             </a>
-            <a href={`mailto: ${links.email}`} className="rounded-full p-1 flex content-center" target='_blank' >
+            <a href={`mailto: ${links.email}`} className="rounded-full p-1 flex content-center" target='_blank' rel="noreferrer">
               <Email fontSize='large' sx={{ color: "#33332D" }} />
             </a>
           </div>

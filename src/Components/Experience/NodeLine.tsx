@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 type NodeLineProps = {}
 
-const NodeLine = ({ }: NodeLineProps) => {
+const NodeLine = (prop: NodeLineProps) => {
   const lineVariants = {
     visible: {
       height: "100%",

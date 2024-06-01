@@ -7,7 +7,7 @@ import { skillsData, conceptsData } from '../../Utils/content'
 
 type BodyProps = {}
 
-const Body = ({ }: BodyProps) => {
+const Body = (props: BodyProps) => {
   return (
     <MainContainer>
       <div className='w-full flex flex-col gap-20'>

@@ -8,7 +8,7 @@ import { footerContent } from '../../Utils/content';
 
 type HomeProps = {}
 
-export default function Home({ }: HomeProps) {
+export default function Home(props: HomeProps) {
   return (
     <div className='flex flex-col w-full gap-20 mt-10'>
       <Header />

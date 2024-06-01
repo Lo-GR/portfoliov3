@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './index.css';
-import logo from './images/TNTLogo.png';
 import Home from './Pages/Home/';
 import { Error } from './Pages/Error';
 import { useState } from 'react';

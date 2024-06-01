@@ -4,7 +4,7 @@ import { headerTitles } from '../../Utils/content';
 
 type HeaderProps = {}
 
-const Header = ({ }: HeaderProps) => {
+const Header = (props: HeaderProps) => {
   return (
     <MainContainer>
       <header className='w-11/12 mx-auto bg-sp-background-300 flex justify-center items-center py-2 rounded-lg lg:w-full'>

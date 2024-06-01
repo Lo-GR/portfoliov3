@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 type AboutProps = {}
 
-const About = ({ }: AboutProps) => {
+const About = (props: AboutProps) => {
   return (
     <div className='flex flex-col gap-12 lg:gap-0 lg:flex-row lg:justify-between lg:items-center'>
       <div className='flex flex-col gap-12 lg:w-1/2'>
