@@ -45,8 +45,8 @@ jobs:
       - name: Copy to S3
         run: aws s3 sync ./build/. s3://www.lo-gr.com --delete
       - name: Refresh CloudFront
-        run: aws cloudfront create-invalidation \ --distribution-id EPHVE5MB5W3E4 \ --paths "/*" "/**/*"
+        run: aws cloudfront create-invalidation --distribution-id EPHVE5MB5W3E4 --paths "/*" "/**/*"
       - name: Refresh CloudFront Extra Deploy
         env: 
           AWS_CLOUDFRONT_TWO: ${{ secrets.AWS_CLOUDFRONT_TWO }}
-        run: aws cloudfront create-invalidation \ --distribution-id E197ZF3UO1G4M3 \ --paths "/*" "/**/*"
+        run: aws cloudfront create-invalidation --distribution-id E197ZF3UO1G4M3 --paths "/*" "/**/*"
