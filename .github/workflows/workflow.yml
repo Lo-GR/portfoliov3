@@ -47,8 +47,8 @@ jobs:
       - name: Refresh CloudFront
         env: 
           AWS_CLOUDFRONT_ONE: ${{ secrets.AWS_CLOUDFRONT_ONE }}
-        run: aws cloudfront create-invalidation \ --distribution-id $AWS_CLOUDFRONT_ONE \ --paths "/*" "/**/*"
+        run: aws cloudfront create-invalidation \ --distribution-id "$AWS_CLOUDFRONT_ONE" \ --paths "/*" "/**/*"
       - name: Refresh CloudFront Extra Deploy
         env: 
           AWS_CLOUDFRONT_TWO: ${{ secrets.AWS_CLOUDFRONT_TWO }}
-        run: aws cloudfront create-invalidation \ --distribution-id $AWS_CLOUDFRONT_TWO \ --paths "/*" "/**/*"
+        run: aws cloudfront create-invalidation \ --distribution-id "$AWS_CLOUDFRONT_TWO" \ --paths "/*" "/**/*"
