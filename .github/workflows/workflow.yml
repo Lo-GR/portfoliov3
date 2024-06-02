@@ -44,3 +44,6 @@ jobs:
           aws-region: us-west-2
       - name: Copy to S3
         run: aws s3 sync ./build/. s3://www.lo-gr.com --delete
+      - name: Refresh CloudFront
+        run: aws cloudfront create-invalidation \ --distribution-id ${{ secrets.AWS_CLOUDFRONT_ONE }} \ --paths "/*" "/**/*"
+        run: aws cloudfront create-invalidation \ --distribution-id ${{ secrets.AWS_CLOUDFRONT_TWO }} \ --paths "/*" "/**/*"
