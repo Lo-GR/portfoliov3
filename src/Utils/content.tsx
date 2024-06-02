@@ -75,6 +75,10 @@ export const skillsData = {
       value: 3
     },
     {
+      name: "SQL",
+      value: 3
+    },
+    {
       name: "Node",
       value: 2
     },
@@ -166,6 +170,10 @@ export const conceptsData = {
     },
     {
       name: "SAAS",
+      value: 2
+    },
+    {
+      name: "InfoSec",
       value: 2
     },
     {
