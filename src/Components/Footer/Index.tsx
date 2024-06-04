@@ -28,9 +28,6 @@ const Footer = ({ footerContent }: FooterProps) => {
             <a href={links.github} className=" rounded-full p-1 flex content-center" target='_blank' rel="noreferrer">
               <GitHub fontSize='large' sx={{ color: "#33332D" }} />
             </a>
-            <a href={`mailto: ${links.email}`} className="rounded-full p-1 flex content-center" target='_blank' rel="noreferrer">
-              <Email fontSize='large' sx={{ color: "#33332D" }} />
-            </a>
           </div>
           <div className='text-center w-full'>
             <p>{copyright}</p>
