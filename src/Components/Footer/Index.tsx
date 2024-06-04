@@ -1,7 +1,7 @@
-import React from 'react'
+
 import MainContainer from '../MainContainer/Index'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Email, GitHub } from '@mui/icons-material';
+import { GitHub } from '@mui/icons-material';
 
 type FooterProps = {
   footerContent: {
