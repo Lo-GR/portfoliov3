@@ -195,9 +195,10 @@ export const experience = [
     dateEnd: 'Present',
     location: 'Tacoma, WA',
     experience: [
-      'Programmed a custom CMS for clients to manage their web content.',
-      'Corresponded with clients to research and fulfill requirements.',
-      'Built progressive web apps following strict accessibility and SEO requirements.'
+      'Acted as a technical SME and point of contact for clients to research and fulfill requests',
+      'Built progressive web apps in PHP and SQL following strict accessibility and SEO requirements',
+      'Created solutions in JavaScript that lowered bandwidth usage of clients by eighty percent.',
+      'Supported WordPress site by reviewing and troubleshooting common issues with themes and plugins such as WooCommerce and Elementor'
     ]
   },
   {
@@ -207,11 +208,12 @@ export const experience = [
     dateEnd: 'Aug 2023',
     location: 'Remote',
     experience: [
-      'Transformed complex ideas into tangible solutions by architecting and constructing React-based, full-stack, modular applications, hosted on AWS.',
+      'Transformed ideas into tangible solutions by architecting and constructing React-based, full-stack applications hosted on AWS',
       'Adapted and optimized back-end APIs to seamlessly align with front-end requirements. This created a cohesive and exceptional user experience across applications.',
       'Engaged with stakeholders, including influential Airforce leaders, bi-weekly to present iteration goals and showcase outcomes. This strategic communication fostered transparency and alignment across the board.',
-      'Revamped a major Nuxt-based learning platform by integrating front-end packages that complied with stringent Department of Defense regulations.',
+      'Revamped a major Nuxt-based learning platform by integrating front-end packages that complied with stringent Department of Defense regulations. This sped up integration time in order to meet critical deadlines',
       'Championed user experience research, translating insights into actionable design improvements.',
+      'Spearheaded the resolution of critical vulnerabilities by collaborating with the security team, researching CVEs and orchestrating the timely update of packages.',
       'Leveraged the power of AWS services, including CDK, Lambda, S3, and EC2, to enable a server-less cloud infrastructure.'
     ]
   },
